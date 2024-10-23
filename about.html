@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APFEL ACADEMY</title>
+  <!-- favicon -->
+  <link rel="icon" href="images/logo2.png">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .lihover {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #3b82f6;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .group:hover .lihover {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="font-semibold flex items-center justify-between fixed bg-white w-full">
+    <!-- logo -->
+    <a href="">
+      <img src="./images/logo1.png" alt="" class="w-20 h-20 mx-5 md:mx-20">
+    </a>
+
+    <!-- menu -->
+    <div id="menu-container">
+      <ul id="menu" class="hidden md:flex gap-20 text-xl px-10">
+        <li class="relative group">
+          <a href="./index.html">Home</a>
+          <span class="lihover"></span>
+        </li>
+        <li class="relative group">
+          <a href="./about.html">About</a>
+          <span class="lihover"></span>
+        </li>
+
+        <li class="relative group">
+          <a href="./gallery.html">Gallery</a>
+          <span class="lihover"></span>
+        </li>
+        <li class="relative group">
+          <a href="./contact.html">Contact</a>
+          <span class="lihover"></span>
+        </li>
+      </ul>
+    </div>
+    <!-- toggle button -->
+    <button id="menu-toggle" class="md:hidden me-5">
+      <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+
+    <!-- mobile menu -->
+  </header>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed top-20 left-0 md:hidden bg-gray-100 font-semibold transform -translate-x-full transition-transform duration-500 ease-in-out w-52 h-full shadow-lg">
+    <nav class="flex flex-col p-4 space-y-2 ">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </div>
+  <main class="container-fluid">
+    <!-- about section -->
+    <section>
+      <div class="text-center">
+        <!-- Emoji Image -->
+        <img src="" alt="emoji" class="mb-5 w-24 h-24 ">
+
+        <!-- Main Heading -->
+        <h1 class="md:text-7xl text-4xl font-bold text-black">Behind the Bytes:</h1>
+        <h2 class="md:text-5xl text-3xl font-bold text-black p-5">Our Story at APFEL</h2>
+
+        <!-- Subtext -->
+        <p class="text-xl mb-4 mt-4 text-gray-500">
+          Take a sneak peek in to <a href="#" class="text-green-600 ">our journey</a>
+        </p>
+      </div>
+    </section>
+    <section class="bg-gray-200 py-14">
+      <div class="max-w-7xl mx-auto py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white p-8 text-center">
+            <h2 class="text-5xl font-bold text-green-600">9</h2>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Years Of Expertise</h3>
+            <p class="mt-4 text-gray-600">With over 8 years of expertise, we provide top-notch coaching in German,
+              English, and competitive exam preparation, tailored to meet your unique learning needs, whether you're a
+              beginner or preparing for high-stakes exams</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-8 text-center">
+            <h2 class="text-5xl font-bold text-green-600">5000+</h2>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Success Stories</h3>
+            <p class="mt-4 text-gray-600">With over 5,000 success stories, our expert coaching has empowered learners to
+              excel in German, English, and competitive exams. No matter your goals, we've got you covered with
+              personalized guidance and proven results</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-8 text-center">
+            <h2 class="text-5xl font-bold text-green-600">10,000+</h2>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Education Across Continents</h3>
+            <p class="mt-4 text-gray-600">Bridging cultures and boundaries, our tailored coaching programs empower
+              learners from every corner of the world to achieve excellence in language mastery and competitive exam
+              preparation</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white p-8 text-center">
+            <h2 class="text-5xl font-bold text-green-600">50+</h2>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Personalized Learning Journeys</h3>
+            <p class="mt-4 text-gray-600">With a dedicated team of 50+ expert instructors, our personalized learning
+              journeys ensure you receive tailored guidance and support, empowering you to excel in language mastery and
+              competitive exams</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-gray-100 p-8  rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+      <p class="text-gray-700 leading-relaxed flex justify-between text-justify">
+        Apfel Academy is your gateway to excellence in language education and competitive exam preparation. With a
+        dedicated team of over 50 experienced instructors, we offer personalized coaching in German and English,
+        tailored
+        to meet the unique needs of each learner. Our comprehensive curriculum covers everything from foundational
+        skills
+        to advanced language proficiency, ensuring that every student can progress at their own pace.
+
+        We utilize proven teaching methods and extensive resources to empower students to achieve their goals, unlocking
+        their full potential on a global stage. Committed to fostering a supportive and engaging learning environment,
+        we
+        strive to inspire confidence and cultivate skills that last a lifetime. At Apfel Academy, we believe that
+        education is a journey, and we are here to guide you every step of the way. Join us and embark on a
+        transformative
+        educational experience that will set you on the path to success in language mastery and beyond!
+      </p>
+    </div>
+    <section>
+      <div class="flex flex-col md:flex-row  bg-gray-200">
+        <div class="flex-1 p-4">
+          <div class=" p-3 ">
+            <h2 class="text-4xl font-bold text-gray-800">Follow Us</h2>
+
+            <div class="flex    mt-5">
+              <a href="https://www.youtube.com/@ApfelAcademy396" target="_blank" class="me-6">
+                <div
+                  class="flex items-center justify-center h-12 w-12  bg-white rounded-lg transition-colors duration-300 ease-in-out hover:bg-red-600  text-red-600 hover:text-white">
+                  <i class="fa-brands fa-youtube fa-xl "></i>
+                </div>
+              </a>
+              <a href="" target="_blank" class="me-6">
+                <div
+                  class="flex items-center justify-center h-12 w-12  bg-white rounded-lg transition-colors duration-300 ease-in-out hover:bg-blue-600  text-blue-600 hover:text-white">
+                  <i class="fa-brands fa-facebook fa-xl "></i>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/apfel_academy/" target="_blank">
+                <div
+                  class="flex items-center justify-center h-12 w-12 bg-white rounded-lg transition-colors duration-300 ease-in-out me-6 text-pink-800 hover:text-white hover:bg-gradient-to-tr hover:from-purple-500 hover:via-pink-500 hover:to-yellow-500">
+
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1  p-4 ">
+          <div class="p-3">
+            <h2 class="text-4xl font-bold text-gray-800">Contact Us</h2>
+            <div class="mt-5">
+              <a href="" class="links text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i class="fas fa-phone  me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>+91
+                1234567890
+              </a><br>
+              <a href="mailto:renjithpstech@gmail.com"
+                class="text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i
+                  class="fas fa-envelope me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>apfelacademy@gmail.com
+              </a>
+              <br>
+
+              <a href="mailto:" class=" text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i
+                  class="fas fa-envelope  me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>apfelacademy@gmail.com
+              </a><br>
+              <a href="https://maps.app.goo.gl/HnfQTrHqXkMbupR67"
+                class="text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i class="fas fa-map-marker-alt  me-5 transition-all duration-300 ease-in-out group-hover:pr-2 "></i>
+                Thrissur,Kerala
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1  p-4 ">
+
+          <div class="p-3">
+            <h2 class="text-4xl font-bold text-gray-800 ">Quick Links</h2>
+            <div class="mt-5">
+              <a href="#" class="text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i
+                  class="fas fa-arrow-right me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>Home
+              </a> <br>
+              <a href="about.html" class="text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i
+                  class="fas fa-arrow-right me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>About
+              </a> <br>
+
+              <a href="gallery.html" class="text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i
+                  class="fas fa-arrow-right me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>Gallery
+              </a><br>
+              <a href="contact.html" class="text-2xl group transition-all duration-300 ease-in-out hover:text-teal-500">
+                <i
+                  class="fas fa-arrow-right me-5 transition-all duration-300 ease-in-out group-hover:pr-2 mb-5"></i>Contact
+              </a><br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h1 class="text-xl text-center bg-slate-400 p-3">Copyright © 2024 by Apfel || All Rights reserved</h1>
+  </footer>
+
+
+
+</body>
+<script>
+  const menuButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton.addEventListener('click', () => {
+    // Toggle class to slide the menu in and out
+    mobileMenu.classList.toggle('translate-x-0')
+
+  });
+</script>
+
+
+</html>
